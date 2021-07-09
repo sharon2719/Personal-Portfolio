@@ -1,0 +1,141 @@
+/* Styling the navbar  */
+body{
+    margin: 0; 
+    overflow:initial;
+}
+/* creating a fading effect for the body */
+.animate-in {
+    -webkit-animation: fadeIn .7s ease-in;
+    animation: fadeIn .7s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.anime-in {
+    -webkit-animation: fadeIn .7s ease-in;
+    animation: fadeIn .7s ease-in;
+}
+
+.anime-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+#logo{
+    margin-bottom: -60px;
+    margin-right: 850px;
+    
+}
+ul{
+    
+    float: right;
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    padding: 70px;
+    color: black;
+    font-size: 18px;
+   
+}
+li{
+    display: inline;
+   
+}
+#navbar{
+    overflow: hidden;
+    background-color: #D3B2AC;
+    position: fixed;
+    
+}
+/* navbar links */
+#navabar a{
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+#navbar a:hover{
+    background-color:white ;
+    
+}
+.sticky{
+    
+    top: 0;
+    width:100%;
+}
+.sticky + .container{
+    padding-top: 70px;
+}
+.container{
+    padding: 20px;
+}
+img{
+   
+   margin-left: 525px;
+    width: 800px;
+   height: auto;
+  
+}
+#intro{
+    margin-top: -300px;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight:normal;
+}
+#dev{
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+.about-container{
+    height: 400px;
+    background-color: #D3B2AC;
+    margin-top: 147px;
+}
+#home{
+    background-color: white;
+}
+#about-heading{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    padding-top: 40px;
+}
+p{
+    padding-left: 40px;
+    padding:60px
+}
+
+
+
+
+
+
