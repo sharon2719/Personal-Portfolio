@@ -1,7 +1,7 @@
 /* Styling the navbar  */
 body{
     margin: 0; 
-    
+    font-family:"Roboto",sans-serif ;
 }
 /* creating a fading effect for the body */
 .animate-in {
@@ -38,10 +38,12 @@ body{
     from { opacity: 0; }
     to { opacity: 1; }
 }
+/* Navbar styling */
 #logo{
     margin-bottom: -60px;
     margin-right: 850px;
     overflow: hidden;
+   
 }
 ul{ 
     float: right;
@@ -51,7 +53,7 @@ ul{
 ul li a{
     text-decoration: none;
     padding: 70px;
-    color: black;
+    color: rgb(240, 231, 231);
     font-size: 18px;
     overflow: hidden;
 }
@@ -61,8 +63,10 @@ li{
 }
 #navbar{
     overflow: hidden;
-    background-color: #A06155;
-    position: fixed;  
+    /* background-color: #181717; */
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 9999;  
 }
 /* navbar links */
 #navabar a{
@@ -73,9 +77,10 @@ li{
    
 }
 #navbar a:hover{
-    background-color:white ;  
+    transition-duration: 0.5s;
     cursor: pointer;
-    box-shadow: 0 0 10px black;
+    font-size: 25px;
+   /* box-shadow: 0 0 10px black; */
 }
 .sticky{
     top: 0;
@@ -90,9 +95,23 @@ li{
         width: 100%;
     }
 }
+/* home section */
 #me{
     width: 1345px;
+    opacity:0.7;
 }
+#word{
+    position: absolute;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(15, 14, 14);
+    top: 65%;
+    left: 3%;
+    font-size: 30px;  
+    /* overflow:hidden; */
+
+}
+/* about section */
 .about-container{
     height: 400px;
     background-color: #D3B2AC;
@@ -111,17 +130,7 @@ li{
     text-align: center;
     
 }
-#word{
-    position: absolute;
-    font-weight: bolder;
-    text-align: center;
-    color: white;
-    top: 65%;
-    left: 3%;
-    font-size: 30px;  
-    /* overflow:hidden; */
-    
-}
+/* project section */
 #next{
     width: 400px;
     height: 400px;
@@ -135,6 +144,7 @@ h3{
     font-size: 40px;
     padding-top: 40px;
 }
+/* column for project section */
 .column{
     float:left;
     width:30%;
@@ -165,6 +175,7 @@ h3{
     text-align: center;
 }
 
+/* contact section */
  .form{
     display: flex;
     flex-direction: column;
@@ -188,6 +199,7 @@ h3{
    border-color: black;
    border-radius: 15px;
 }
+/* message section */
 #message{
     width: 30%;
     padding: 10px;
@@ -196,6 +208,7 @@ h3{
     border-radius: 15px;
     
 }
+/* send button */
 #send{
     padding: 10px;
     width: 10%;
@@ -223,13 +236,21 @@ h3{
     display: table;
     clear:both;
 }
-/* Style the icons */
+/* Style the icons  for the footer*/
 #footer{
     text-align: center;
     height:80px;
     background-color:#A06155;
     margin-top: -20px;
+
+    
 }
+#twitter{
+    margin-left:40px ;
+    margin-right: 20px;
+   
+}
+
 
 
 
